@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from AppVrental.views import (alquiler_formulario, formulario_busqueda)
+from AppVrental.views import (alquiler_formulario, busqueda_nombre)
 
 urlpatterns = [
     path('alquiler/', alquiler_formulario),
-    path('buscar/', formulario_busqueda)
+    path('buscar/', busqueda_nombre)
 ]
