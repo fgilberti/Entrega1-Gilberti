@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<form action="" method="POST">
+<h1><u><FONT COLOR="navy">Bienvenido a V-Rental</FONT></u></h1>
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+    {% csrf_token %}
+    <h2> Ingrese sus datos Personales:</h2>
+    {{registro_cliente}}
+    <h2> Seleccione el Vehículo:</h2>
+    {{eleccion_vehiculo}}
+    <h2> Ingrese las Fechas deseadas:</h2>
+    {{eleccion_fecha}}
+</form>
+----------------------------------------------------------------------------------------------------------------------------------
+<button type="submit">Enviar Solicitud</button>

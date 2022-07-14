@@ -8,10 +8,9 @@ class Cliente(models.Model):
 
 class Vehiculo(models.Model):
     marca = models.CharField(max_length=20)
-    cant_asientos = models.IntegerField()
-    precio_dia = models.IntegerField()
+    cantidad_de_asientos = models.IntegerField()
+    precio_por_dia = models.IntegerField()
 
 class Alquiler(models.Model):
-    fecha_retiro = DateField()
-    fecha_entrega = DateField()
-    
+    fecha_de_retiro = DateField()
+    fecha_de_devolucion = DateField()
